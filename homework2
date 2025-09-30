@@ -1,0 +1,78 @@
+#Q1 What is the advantage of using a tail pointer in a linked list?
+#Efficiency for accessing and inserting. Without a tail pointer, when we want to insert a new node at the end, we need to traverse the entire list
+#from the head until you reach the last node. With a tail pointer, we have a direct reference to the last node, so you can add it fast and easy. 
+#It also provides quick access to the last node.
+
+#Q2
+def dolt(node):
+    if node is None:
+        return
+    dolt(node.next)
+    print(node.value)
+
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+head = Node(12)
+head.next = Node(3)
+head.next.next = Node(5)
+head.next.next.next = Node(2)
+
+dolt(head)
+
+#Q3
+def dolt(n):
+    if n == 0:
+        return 1
+    elif n == 1:
+        return 1
+    elif n == 2:
+        return 2
+    else:
+        return dolt(n-1) + dolt(n-2) - dolt(n-3)
+
+print("dolt(1) =", dolt(1))
+print("dolt(3) =", dolt(3))
+print("dolt(6) =", dolt(6))
+
+#Q4
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.prev = None
+        self.next = None
+
+def doubly_linked_list(values):
+    if not values:
+        return None
+    head = Node(values[0])
+    current = head
+    for val in values[1:]:
+        new_node = Node(val)
+        current.next = new_node
+        new_node.prev = current
+        current = new_node
+    return head
+
+def sum_three_middle_nodes(head):
+    if not head:
+        return 0
+    length = 0
+    current = head
+    while current:
+        length += 1
+        current = current.next
+    mid_index = length // 2
+    current = head
+    for i in range(mid_index - 1):
+        current = current.next
+    left_middle = current 
+    middle = current.next 
+    right_middle = middle.next 
+    return left_middle.data + middle.data + right_middle.data
+
+values = [2, 4, 8, 10, 15, 29, 41]
+head = doubly_linked_list(values)
+result = sum_three_middle_nodes(head)
+print(result)
