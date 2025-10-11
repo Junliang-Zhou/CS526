@@ -35,4 +35,52 @@ def unique_substrings(s):
 
 unique_substrings("abcab")
 
+#Q3
+def insert_at_bottom(stack, item):
+    if not stack:
+        stack.append(item)
+    else:
+        temp = stack.pop()
+        insert_at_bottom(stack, item)
+        stack.append(temp)
+
+def reverse_stack_array(stack):
+    if stack:
+        temp = stack.pop()
+        reverse_stack_array(stack)
+        insert_at_bottom(stack, temp)
+
+#Linked List
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+def reverse_linked_list(head):
+    if head is None or head.next is None:
+        return head  # Base case: last node becomes new head
+
+    new_head = reverse_linked_list(head.next)
+    head.next.next = head
+    head.next = None
+    return new_head
+    
+#Double Linked List
+class DNode:
+    def __init__(self, data):
+        self.data = data
+        self.prev = None
+        self.next = None
+
+def reverse_doubly_linked_list(node):
+    if node is None:
+        return None
+    node.prev, node.next = node.next, node.prev  # Swap next and prev
+    
+    if node.prev is None: # If the original next was None, this node is the new head
+        return node
+    return reverse_doubly_linked_list(node.prev)
+
+
+
 
