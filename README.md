@@ -16,6 +16,8 @@ with open("C:\BU Python\input_file.txt", "r") as file: # Before inputing any tex
             count += 1
 print(count)
 
+[Download the Word document](palendrome file test screen shot.docx)
+
 #Q2
 def collect_substrings(s, start, current, seen):
     if start >= len(s):  # Base case: stop if we've reached the end of the string
