@@ -18,7 +18,7 @@ This repository contains solutions to 4 problems:
 
 ## How to Run the Code
 
-Each Python file reads from a sample input file. To run:
+Each Python file is a solution of one problem. To run:
 
 ```bash
 python mid-term Q1.py
