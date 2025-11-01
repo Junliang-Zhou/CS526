@@ -18,7 +18,7 @@ This repository contains solutions to 4 problems:
 
 ## How to Run the Code
 
-Each Python file is a solution of one problem. In all soultions, I put input1 file for each question as a sample. If you want to run other input files, you can just change 1 to other number.
+Each Python file is a solution of one problem. In all soultions, I put input1 file for each question as a sample. If you want to run other input files, you can just change 1 to other numbers.
 
 ```bash
 python mid-term Q1.py
