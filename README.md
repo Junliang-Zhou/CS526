@@ -30,3 +30,4 @@ Q1
 Preorder Traversal starting from the root then visit each child from left to right
 Breadth-First Traversal. we visit nodes level by level from top to bottom, and within each level, from left to right.
 For post, we visit all children from left to right then visit the parent node.
+In in-order traversal, we visit the left subtree then the current node then the right subtree.
