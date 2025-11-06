@@ -25,3 +25,9 @@ python mid-term Q1.py
 python mid-term Q2.py
 python mid-term Q3.py
 python mid-term Q4.py
+
+# Homework 4
+Q1
+Preorder Traversal starting from the root then visit each child from left to right
+Breadth-First Traversal. we visit nodes level by level from top to bottom, and within each level, from left to right.
+For postorder, we visit all children from left to right then visit the parent node.
