@@ -31,7 +31,17 @@ Randomly generates an input set of size 5 to 50 with values between 1 and 1000. 
 Adds a random value and prints the tree. Deletes a random value and prints the tree.
 Runs two FindNode tests: One for a value that exists. One for a value that does not exist
 
+# Homework5 Q2
+Using a dynamic programming array dp where:
+dp[i] = number of valid vowel-only decodings for the first i symbols of the Morse string
 
+Steps:
+Initialize dp[0] = 1 (empty string has one valid decoding)
+For each position i from 1 to n: Check if any vowel code ends at position i
+If code[i-len(vowel):i] == vowel_code, then add dp[i-len(vowel)] to dp[i]
+Final answer is dp[n] This counts all valid ways to split the Morse string using only vowel codes.
+
+When running the code, it first asks the input file number. Enter 1 for vowel_input1.txt
 
 
 
