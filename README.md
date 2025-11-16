@@ -1,10 +1,9 @@
 # Homework5 Q1
-My python file named as "Homework5 Q1.py". When running the code, we can type python3 "Homework5 Q1.py" in the terminal
+My python file named as "Homework5 Q1.py". When running the code, we can type python3 "Homework5 Q1.py" in the terminal but the path of the terminal should include this python file.
 
 Node ADT
 Each node stores: A value, A left child, A right child
-Created using: Node(value)
-This is the basic building block of the tree.
+Created using: Node(value) This is the basic building block of the tree.
 
 BST ADT
 The BST stores: A root node and methods to add, delete, find and print nodes.
@@ -23,12 +22,10 @@ Searches for a value in the tree.
 Starts at the root and moves left or right depending on comparison. Returns True if found, False otherwise.
 
 PrintTree()
-Uses in-order traversal: Left → Node → Right
-This prints the values in sorted order.
+Uses in-order traversal: Left → Node → Right. This prints the values in sorted order.
 
 Demo Code
-Randomly generates an input set of size 5 to 50 with values between 1 and 1000. Builds the initial tree.
-Adds a random value and prints the tree. Deletes a random value and prints the tree.
+Randomly generates an input set of size 5 to 50 with values between 1 and 1000. Builds the initial tree. Add a random value and prints the tree. Delete a random value and prints the tree.
 Runs two FindNode tests: One for a value that exists. One for a value that does not exist
 
 # Homework5 Q2
@@ -43,23 +40,18 @@ Final answer is dp[n] This counts all valid ways to split the Morse string using
 
 When running the code, it first asks the input file number. Enter 1 for vowel_input1.txt
 
+# Homework5 Q3
+Firstly, to build increasing subsequences: For each element in A, compute the longest increasing subsequence ending at that element and do the same for B.
 
+Alternate and combine: Try combining elements from A and B such that they alternate and remain increasing.
 
+We consider both patterns: Odd positions from A, even from B. Odd positions from B, even from A.
 
+Track the best sequence: For each valid alternating pair, we build a candidate sequence and keep the longest one.
 
+Return the best result: The final result is the longest alternating increasing sequence found.
 
-
-
-
-
-
-
-
-
-
-
-
-
+How to run the code: Firstly we need to put this python file and all input files in the same folder. Then I use "cd" to change the path of terminal to that folder. I put longest_seq1.txt in the code as the first input file. When I want to run other files like longest_seq2 or longest_seq3, just change 1 to 2 or 3 in the code.
 
 
 # MID-TERM – 4 Problems
