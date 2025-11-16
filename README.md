@@ -51,7 +51,9 @@ Track the best sequence: For each valid alternating pair, we build a candidate s
 
 Return the best result: The final result is the longest alternating increasing sequence found.
 
-How to run the code: Firstly we need to put this python file and all input files in the same folder. Then I use "cd" to change the path of terminal to that folder. I put longest_seq1.txt in the code as the first input file. When I want to run other files like longest_seq2 or longest_seq3, just change 1 to 2 or 3 in the code.
+How to run the code: Firstly we need to put this python file and all input files in the same folder. Then I use "cd" to change the path of terminal to that folder. I put longest_seq1.txt in the code as the first input file. When I want to run other files like longest_seq2, just change 1 to 2 in the code.
+
+My code can run 1 and 2 correctly but wrong for the rest of input files. Sorry. 
 
 
 # MID-TERM – 4 Problems
