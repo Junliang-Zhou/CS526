@@ -12,13 +12,14 @@ Radix Sort:	Time complexity is O(𝑛𝑘) where k is number of digits, use it f
 
 How to run the codes: I have my own example input files named as "HW6 Q1 Small Input.txt", "HW6 Q1 Medium Input.txt" and "HW6 Q1 Large Input.txt". I have uploaded them in the repository. Next, put code files and input files in the same folder. Before running the code, change the path of terminal to this folder.
 
+# Homework6 Q3
+The code is not completed. Struggling at matching them.
 
-
-
-
-
-
-
+1.Each man proposes to the woman he most prefers and hasn’t yet proposed to.
+2.Each woman considers proposals: she tentatively accepts the man she prefers most and rejects the rest.
+3.Rejected men propose to their next choice.
+4.Women update their matches if they prefer a new proposal over their current one.
+5.Repeat until all men and women are matched.
 
 # Homework5 Q1
 My python file named as "Homework5 Q1.py". When running the code, we can type python3 "Homework5 Q1.py" in the terminal but the path of the terminal should include this python file.
