@@ -1,3 +1,25 @@
+# Homework6 Q1 Q2
+Merge Sort: Recursively divide the array into halves, sort each half, then merge them
+Quick Sort: Choose a pivot, partition into smaller/bigger, recursively sort partitions
+Insertion Sort: Build the sorted array one item at a time by inserting into correct position
+Radix Sort: Process digits from least significant to most significant.
+
+Comparsion
+Merge Sort: Time complexity is O(nlogn), use it for large datasets.
+Quick Sort:	Time complexity average is O(nlogn), worst is O(n^2), use it for fast general sorting.
+Insertion Sort:	Time complexity is O(n^2), use it for small datasets
+Radix Sort:	Time complexity is O(𝑛𝑘) where k is number of digits, use it for sorting integers with bounded digit length
+
+How to run the codes: I have my own example input files named as "HW6 Q1 Small Input.txt", "HW6 Q1 Medium Input.txt" and "HW6 Q1 Large Input.txt". I have uploaded them in the repository. Next, put code files and input files in the same folder. Before running the code, change the path of terminal to this folder.
+
+
+
+
+
+
+
+
+
 # Homework5 Q1
 My python file named as "Homework5 Q1.py". When running the code, we can type python3 "Homework5 Q1.py" in the terminal but the path of the terminal should include this python file.
 
