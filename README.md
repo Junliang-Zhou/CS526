@@ -1,3 +1,31 @@
+# Huffman Homework
+
+huffman part 1.py
+1. Frequency Map Count how many times each character appears in the input text. This gives the weights for building the Huffman tree.
+2. Priority Queue (Min‑Heap) Each character becomes a single‑node tree with its frequency as the key. These nodes are inserted into a priority queue (heapq).
+3. Build Huffman Tree Repeatedly remove the two nodes with the lowest frequency, merge them into a new node whose frequency is the sum, and reinsert it. Continue until only one tree remains — the Huffman tree.
+4. Generate Codes Traverse the Huffman tree: assign "0" for left branches and "1" for right branches. Each leaf node (character) gets a unique binary code.
+5. Compress Input Replace each character in the original text with its Huffman code to produce the compressed binary string.
+6. Save Output Write the compressed binary string to compressed.txt and the code mappings to codes.txt.
+
+huffman part 2.py
+1. Load Codes Read the Huffman code mappings from codes.txt. Reverse the mapping so binary codes map back to characters.
+2. Read Compressed Input Load the compressed binary string from compressed.txt.
+3. Decode Traverse the binary string bit by bit, matching sequences against the code map. Each match corresponds to a character in the original text.
+4. Save Output Write the reconstructed text to reconstructed.txt.
+
+Files:
+huffman screen shots.docx
+huffman part 1.py: Compresses input text using Huffman encoding.
+huffman part 2.py: Reconstructs original text from compressed binary.
+compressed.txt: Contains compressed binary output.
+codes.txt: Contains Huffman code mappings.
+reconstructed.txt: Contains decompressed text.
+
+How to Run:
+1. Run huffman part 1.py to generate compressed output.
+2. Run huffman part 2.py to reconstruct the original text.
+
 # Homework6 Q1 Q2
 Merge Sort: Recursively divide the array into halves, sort each half, then merge them
 Quick Sort: Choose a pivot, partition into smaller/bigger, recursively sort partitions
