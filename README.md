@@ -1,3 +1,30 @@
+# Final Q1
+First line: number of cracks n. Second line: flood threshold. Third line: drain capacity.
+Next n lines: (time, size) for each crack.
+
+Use a max‑heap (priority queue) to always fix the largest crack first.
+Each crack is stored as a “base value” = initial_size - time_appeared.
+At time t, the current size of a crack is base + t.
+
+Advance time unit by unit then add new cracks when they appear.
+Fix one crack (largest).
+Compute inflow = sum_bases + t * heap_size. Update floodwater = flood + inflow - drain. If floodwater ≥ threshold → output FLOOD.
+Otherwise, continue until all cracks are fixed.
+
+If no cracks remain and no future events, stop.
+Output SAFE and the maximum floodwater reached.
+
+How to run:
+I make my BU Python folder includes flood.py and flood_inputs folder which contains all flood input text files.
+Use cd "C:\BU Python" in the terminal to navigate to BU Pyhton folder. Then run python flood.py flood_inputs/flood_1.txt to get the result for flood_1.txt.
+For other input text files, use the same format as previous one, just change 1 to 2, 3 and other numbers.
+
+
+
+
+
+
+
 # Huffman Homework
 
 huffman part 1.py
