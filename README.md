@@ -19,11 +19,21 @@ I make my BU Python folder includes flood.py and flood_inputs folder which conta
 Use cd "C:\BU Python" in the terminal to navigate to BU Pyhton folder. Then run python flood.py flood_inputs/flood_1.txt to get the result for flood_1.txt.
 For other input text files, use the same format as previous one, just change 1 to 2, 3 and other numbers.
 
+# Final Q2
+The first line of the input file gives the number of rows. The second line gives the number of columns. The following lines contain the altitude grid. Example:
 
+From each cell (r, c), we explore all 8 neighbors.
+We only move to a neighbor if its altitude is lower than the current cell.
+Each move increases the path length by 1.
 
+To avoid recomputation, we store the longest path length starting from each cell in a memoization table.
+We run DFS from every cell in the grid.
+The maximum path length across all cells is the answer.
 
-
-
+How to run:
+I make my BU Python folder includes ski.py and ski_inputs folder which contains all ski input text files.
+Use cd "C:\BU Python" in the terminal to navigate to BU Pyhton folder. Then run python ski.py ski_inputs/ski_input1.txt to get the result for ski_input1.txt.
+For other input text files, use the same format as previous one, just change 1 to 2, 3 and other numbers.
 
 # Huffman Homework
 
